@@ -1,11 +1,11 @@
 package org.example;
 
-class car2 {
+class Car2 {
     private String brand;
     private int year;
     private double horsepower;
 
-    private car2(Builder builder) {
+    private Car2(Builder builder) {
         this.brand = builder.brand;
         this.year = builder.year;
         this.horsepower = builder.horsepower;
@@ -64,9 +64,9 @@ class car2 {
             return this;
         }
 
-        public car2 build() {
+        public Car2 build() {
             validate(); 
-            return new car2(this);
+            return new Car2(this);
         }
 
         private void validate() {
@@ -79,7 +79,7 @@ class car2 {
 
     public static void main(String[] args) {
 
-        car2 car = new car2.Builder()
+        Car2 car = new Car2.Builder()
                 .brand("Toyota")
                 .year(2022)
                 .horsepower(200)

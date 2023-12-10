@@ -2,7 +2,7 @@ package org.example;
 
 import java.io.IOException;
 
-public interface entitySerialization {
+public interface EntitySerialization {
 
     void serialize(Object entity, String fileName) throws IOException;
 

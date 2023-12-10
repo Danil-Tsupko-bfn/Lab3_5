@@ -1,11 +1,11 @@
 import java.util.regex.Pattern;
 
-class val {
+class Val {
     private String brand;
     private int year;
     private double horsepower;
 
-    private val(Builder builder) {
+    private Val(Builder builder) {
         this.brand = builder.brand;
         this.year = builder.year;
         this.horsepower = builder.horsepower;
@@ -66,9 +66,9 @@ class val {
             return this;
         }
 
-        public val build() {
+        public Val build() {
             validate();
-            return new val(this);
+            return new Val(this);
         }
 
         private void validate() {
@@ -87,7 +87,7 @@ class val {
     public static void main(String[] args) {
 
         try {
-            val car = new val.Builder()
+            Val car = new Val.Builder()
                     .brand("Toyota")
                     .year(2022)
                     .horsepower(200)

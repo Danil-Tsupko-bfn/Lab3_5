@@ -2,7 +2,7 @@ package org.example;
 
 import java.io.*;
 
-public class txtEntitySerialization implements entitySerialization {
+public class TxtEntitySerialization implements EntitySerialization {
 
     @Override
     public void serialize(Object entity, String fileName) throws IOException {

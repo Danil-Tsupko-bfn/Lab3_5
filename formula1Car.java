@@ -1,7 +1,7 @@
-public class formula1Car extends car1 {
+public class Formula1Car extends car1 {
     private double downforce;
 
-    public formula1Car(String brand, int year, double horsepower, double downforce) {
+    public Formula1Car(String brand, int year, double horsepower, double downforce) {
         super(brand, year, horsepower);
         this.downforce = downforce;
     }

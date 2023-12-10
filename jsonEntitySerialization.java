@@ -1,10 +1,10 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.entitySerialization;
+import org.example.EntitySerialization;
 
 import java.io.File;
 import java.io.IOException;
 
-public class jsonEntitySerialization implements entitySerialization {
+public class JsonEntitySerialization implements EntitySerialization {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import java.io.File;
 import java.io.IOException;
 
-public class xmlEntitySerialization implements entitySerialization {
+public class XmlEntitySerialization implements EntitySerialization {
 
     private final XmlMapper xmlMapper = new XmlMapper();
 

@@ -1,13 +1,13 @@
 import java.io.Serializable;
 
-public class car implements Serializable {
+public class Car implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String brand;
     private int year;
     private double horsepower;
 
-    public car(String brand, int year, double horsepower) {
+    public Car(String brand, int year, double horsepower) {
         this.brand = brand;
         this.year = year;
         this.horsepower = horsepower;
